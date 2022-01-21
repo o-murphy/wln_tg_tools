@@ -53,7 +53,8 @@ async def login(message: types.Message):
                   "h": 'TelegramBotAuth',
                   "app": 'TelegramBotAuth.{}'.format(message.chat.id),
                   "at": 0,
-                  "dur": 86400,
+                  # "dur": 86400,
+                  "dur": 0,
                   "fl": -1,
                   "p": "{}"}
 

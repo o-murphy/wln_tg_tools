@@ -72,8 +72,8 @@ if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     loop.create_task(WIALON.session_update())
 
-    notifications = notify()
-
-
-    loop.create_task(notifications.check_loop())
+    # notifications = notify()
+    #
+    #
+    # loop.create_task(notifications.check_loop())
     executor.start_polling(dp, skip_updates=True)
